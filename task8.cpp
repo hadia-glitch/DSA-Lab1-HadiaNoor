@@ -11,8 +11,9 @@ void findsubstring(string str, string substr){
        if(str.substr(i,m) == substr){ //parameters are starting index and length
             cout<< "Substring found at index: " << i << endl;return;
         }
-            
-}}
+      
+} cout<< "Substring not found"   <<endl; return; //not found
+}
 int main(){
  string text, pattern;
     cout << "Enter text: ";
@@ -20,5 +21,6 @@ int main(){
     cout << "Enter pattern: ";
     getline(cin, pattern);
      findsubstring(text, pattern);
+     cout<<"Program ended"<<endl;//modified
     return 0;
 }
