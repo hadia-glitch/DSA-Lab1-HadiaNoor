@@ -1,13 +1,11 @@
-
 #include <iostream>
 #include <vector>
 using namespace std;
 
-bool isempty(int arr[], int n) {
+bool isempty(int arr[], int n) {//for empty case
     return n == 0; 
 }
-
-vector<int> findIndexes(int arr[], int n, int target) {
+vector<int> findIndexes(int arr[], int n, int target) {//to find index and add to vector
     vector<int> indexes;
     for (int i = 0; i < n; i++) {
         if (arr[i] == target) {
@@ -16,10 +14,9 @@ vector<int> findIndexes(int arr[], int n, int target) {
     }
     return indexes;
 }
-
 int main() {
-    int numbers[6] = {1, 2, 3, 2, 5, 2};
-    int n = 6;  
+    int numbers[]= {};
+    int n = 0;  
     
     int target;
     cout << "Enter element to be found: ";
